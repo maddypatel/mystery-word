@@ -36,7 +36,7 @@ def game(mystery):
     print("The mystery word has {} characters.".format(len(mystery)))
     while turns > 0:
         guess = input("\nGuess a letter: ").upper()
-        while len(guess) != 1:
+        while guess.isdigit() or len(guess) != 1:
             print("Invalid input! Only one letter allowed.")
             guess = input("\nGuess a letter: ").upper()
         while guess in guesses:
