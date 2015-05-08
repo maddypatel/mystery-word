@@ -70,7 +70,7 @@ def display_word(mystery, guesses):
         else:
             user_guess += "_"
     user_guess = " ".join(user_guess)
-    return user_guess
+    return user_guess.upper()
 
 def is_word_complete(mystery, guesses):
     """Checks to see if the word is complete"""
